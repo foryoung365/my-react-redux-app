@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 
-export function Todos() 
+export default function Todos() 
 {
     const dispatch = useDispatch();
     const todos = useSelector(selectTodos);
