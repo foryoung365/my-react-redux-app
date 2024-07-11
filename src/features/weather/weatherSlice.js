@@ -1,10 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchWeather = createAsyncThunk('weather/fetchWeather', async () => {
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Beijing&appid=eb148a0f3998e9ddf8ef13fbf44c2373';
+    const url = '/.netlify/functions/fetchWeather';
     const response = await fetch(url);
     const json = await response.json();
-    return json['weather'][0];
+    return json;
 });
 
 export const weatherSlice = createSlice({

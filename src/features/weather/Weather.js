@@ -10,7 +10,7 @@ export default function Weather() {
 
     useEffect(() => {
         dispatch(fetchWeather());
-    },[]);
+    },[dispatch]);
 
     let weatherWidget = "";
     if (isFailed) {

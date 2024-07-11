@@ -10,7 +10,7 @@ export default function Quotes() {
 
     useEffect(() => {
         dispatch(fetchRandomQuote());
-    },[]);
+    },[dispatch]);
 
     let quoteWidget = <div>No Quotes</div>;
     if (isLoading) {
