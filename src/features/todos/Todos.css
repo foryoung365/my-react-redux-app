@@ -1,0 +1,65 @@
+/* Todos.css */
+
+.todos-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .todo-input {
+    border: none;
+    border-bottom: 2px solid currentColor; /* 使用文字的颜色 */
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* 允许子项换行 */
+    justify-content: center;
+    gap: 20px; /* 子项之间的间距 */
+  }
+  
+  .todo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+    padding: 10px;
+    width: calc(33% - 40px); /* 使每行至少能放下3个todo，减去gap的总和 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 边框 */
+  }
+  
+  .todo-text {
+    flex-grow: 1;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .todo-button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .done-button {
+    color: green;
+    align-self: flex-end; /* 将按钮对齐到右边 */
+  }
+  
+  .remove-button {
+    color: red;
+    align-self: flex-end; /* 将按钮对齐到右边 */
+  }
+  

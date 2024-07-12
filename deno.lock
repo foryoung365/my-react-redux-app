@@ -11,6 +11,7 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@babel/plugin-proposal-private-property-in-object@^7.21.11",
         "npm:@reduxjs/toolkit@^1.9.7",
         "npm:@testing-library/jest-dom@^5.17.0",
         "npm:@testing-library/react@^13.4.0",

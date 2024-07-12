@@ -18,7 +18,9 @@ export default function Weather() {
     } else if (isLoading) {
         weatherWidget  = <h2>Loading weather...</h2>;
     }else{
-        weatherWidget  = <h2>{JSON.stringify(weather)}</h2>
+        weatherWidget  = <div>
+            <h2>Beijing<img src={`http://openweathermap.org/img/wn/${weather.icon}.png`} alt={weather.main}/></h2>      
+        </div>
     }
 
     return (
